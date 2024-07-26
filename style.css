@@ -11,6 +11,8 @@ box-sizing: border-box;
 html,
 body {
 height: 100%;
+margin: 0;
+padding: 0;
 }
 
 body {
@@ -23,18 +25,32 @@ font-family: 'Tequilla Sunrise', sans-serif; /* Utilisation de la nouvelle polic
 
 .message-container {
 position: absolute;
-top: 20%;
+top: 10%;
 left: 50%;
 transform: translate(-50%, -10%);
 width: 80%;
+max-height: 80%; /* Limiter la hauteur du conteneur */
 padding: 20px;
+background: rgba(0, 0, 0, 0.8);
 border-radius: 10px;
 font-size: 1.2em;
 line-height: 1.5;
 text-align: center;
 color: white;
+overflow-y: auto; /* Ajouter une barre de défilement verticale */
 }
 
 .message-container p {
 margin: 10px 0; /* Espacement entre les paragraphes */
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 600px) {
+.message-container {
+  width: 90%; /* Ajuster la largeur pour les petits écrans */
+  top: 5%;
+  transform: translate(-50%, -5%);
+  font-size: 1em; /* Réduire la taille de la police */
+  padding: 15px;
+}
 }
