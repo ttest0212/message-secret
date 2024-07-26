@@ -175,3 +175,15 @@ class PointerParticles extends HTMLElement {
 }
 
 PointerParticles.register();
+
+function toggleMusic() {
+    const audio = document.getElementById('background-music');
+    const musicText = document.getElementById('music-text');
+    if (audio.paused) {
+        audio.play();
+        musicText.textContent = 'Arrêter la musique';
+    } else {
+        audio.pause();
+        musicText.textContent = 'Jouer la musique';
+    }
+}
