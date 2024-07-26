@@ -25,13 +25,12 @@ font-family: 'Tequilla Sunrise', sans-serif; /* Utilisation de la nouvelle polic
 
 .message-container {
 position: absolute;
-top: 10%;
+top: 20%;
 left: 50%;
 transform: translate(-50%, -10%);
 width: 80%;
 max-height: 80%; /* Limiter la hauteur du conteneur */
 padding: 20px;
-background: rgba(0, 0, 0, 0.8);
 border-radius: 10px;
 font-size: 1.2em;
 line-height: 1.5;
