@@ -1,0 +1,40 @@
+/* author: https://codepen.io/hexagoncircle/pen/vYwKNzR Ryan Mulligan */
+@font-face {
+  font-family: 'Tequilla Sunrise';
+  src: url('fonts/Candy\ Cake.ttf') format('truetype');
+}
+
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+}
+
+body {
+overflow: hidden;
+display: grid;
+color: white;
+background: black;
+font-family: 'Tequilla Sunrise', sans-serif; /* Utilisation de la nouvelle police */
+}
+
+.message-container {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -10%);
+width: 80%;
+padding: 20px;
+border-radius: 10px;
+font-size: 1.2em;
+line-height: 1.5;
+text-align: center;
+color: white;
+}
+
+.message-container p {
+margin: 10px 0; /* Espacement entre les paragraphes */
+}
